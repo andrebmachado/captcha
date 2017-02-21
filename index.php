@@ -29,6 +29,7 @@ $xpath = new DOMXPath($dom);
 $qry = $xpath->query("/html/body/img");
 var_dump($qry);
 
+
 //$imagem = "http://www.receita.fazenda.gov.br/scripts/captcha/" . utf8_decode(trim($qry->item(0)->getAttribute('src')));
 //			print_r($imagem);
 //$qry = $xpath->query("//input[@id='__VIEWSTATE']");

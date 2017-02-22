@@ -1,59 +1,59 @@
-function proxima(link){
-   location.replace(link);
-   return false;
-}
-
-function carrega(vobjeto) {
-	 for (var va = 0 ; va < document.forms[0].elements.length; va++) {
-		if (document.forms[0].elements[va].name == vobjeto) {
-			document.forms[0].elements[va].focus();
-		}
-	 }    
-	 return false;
-}
-
-function volta(vvolta) {
- history.go(vvolta*-1);
- return false;
-}
-
-function SaltaCampo (campo, prox, tammax, teclapres){
-	var tecla = teclapres.keyCode;
-	vr = campo.value;
-	tam = vr.length;
-	if (tecla != 0 && tecla != 10 && tecla != 24)
-	  if (tam == tammax)
-		  prox.focus();
-}
+//function proxima(link){
+//   location.replace(link);
+//   return false;
+//}
+//
+//function carrega(vobjeto) {
+//	 for (var va = 0 ; va < document.forms[0].elements.length; va++) {
+//		if (document.forms[0].elements[va].name == vobjeto) {
+//			document.forms[0].elements[va].focus();
+//		}
+//	 }    
+//	 return false;
+//}
+//
+//function volta(vvolta) {
+// history.go(vvolta*-1);
+// return false;
+//}
+//
+//function SaltaCampo (campo, prox, tammax, teclapres){
+//	var tecla = teclapres.keyCode;
+//	vr = campo.value;
+//	tam = vr.length;
+//	if (tecla != 0 && tecla != 10 && tecla != 24)
+//	  if (tam == tammax)
+//		  prox.focus();
+//}
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-function proxima(link){
-location.replace(link);
-return false;
-}
-
-function carrega(vobjeto){
- for (var va = 0 ; va < document.forms[0].elements.length; va++) {
-	if (document.forms[0].elements[va].name == vobjeto) {
-		document.forms[0].elements[va].focus();
-	}
- }    
- return false;
-}
-
-function volta(vvolta) {
- history.go(vvolta*-1);
- return false;
-}
-
-function SaltaCampo (campo, prox, tammax, teclapres){
-var tecla = teclapres.keyCode;
-vr = campo.value;
-tam = vr.length;
-if (tecla != 0 && tecla != 10 && tecla != 24)
-  if (tam == tammax)
-	  prox.focus();
-}
+//function proxima(link){
+//location.replace(link);
+//return false;
+//}
+//
+//function carrega(vobjeto){
+// for (var va = 0 ; va < document.forms[0].elements.length; va++) {
+//	if (document.forms[0].elements[va].name == vobjeto) {
+//		document.forms[0].elements[va].focus();
+//	}
+// }    
+// return false;
+//}
+//
+//function volta(vvolta) {
+// history.go(vvolta*-1);
+// return false;
+//}
+//
+//function SaltaCampo (campo, prox, tammax, teclapres){
+//var tecla = teclapres.keyCode;
+//vr = campo.value;
+//tam = vr.length;
+//if (tecla != 0 && tecla != 10 && tecla != 24)
+//  if (tam == tammax)
+//	  prox.focus();
+//}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -73,7 +73,6 @@ function validaCaracteresCaptcha(nomeForm, idLetra, paginaDestino) {
 	//}
 			
 	if (document.getElementById("cnpj").value == ""){
-		 AlertaCaptcha("Favor preencher o campo de CNPJ");
 		 form.action="";
 		 return false;
 	}

@@ -78,7 +78,8 @@ function validaCaracteresCaptcha(nomeForm, idLetra, paginaDestino) {
 		 return false;
 	}
 	
-	form.action=paginaDestino;
+	form.action="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/valida.asp";
+	//form.action=paginaDestino;
 	return true;
 }
 	

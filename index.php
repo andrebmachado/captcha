@@ -19,15 +19,17 @@ curl_setopt($ch, CURLOPT_URL, "http://www.receita.fazenda.gov.br/PessoaJuridica/
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_COOKIE, "flag=0");
 $retorno = curl_exec($ch);
-curl_close($ch);
+echo $retorno;
+echo "<img src=\"".$retorno."\">";
+
+//curl_close($ch);
 
 $dom = new DomDocument();
 @$dom->loadHTML($retorno);
-
 $xpath = new DOMXPath($dom);
 //$qry = $xpath->query("//img[@id='RadCaptcha1_CaptchaImage']");
-$qry = $xpath->query("/html/body/img");
-var_dump($qry);
+//$qry = $xpath->query("/html/body/img");
+//var_dump($qry);
 
 
 //$imagem = "http://www.receita.fazenda.gov.br/scripts/captcha/" . utf8_decode(trim($qry->item(0)->getAttribute('src')));

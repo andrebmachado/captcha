@@ -13,6 +13,7 @@ $doc = new DOMDocument;
 $doc->load('test.xml');
 $xpath = new DOMXPath($doc);
 $products = $xpath->query("/PRODUCTS/PRODUCT[SKU='soft32323']/NAME");
+var_dump($products);
  
 foreach ($products as $product){
    print($product->nodeValue)."<br>";
